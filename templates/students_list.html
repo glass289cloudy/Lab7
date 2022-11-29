@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Список студентов</title>
+</head>
+<body>
+<h1>Список студентов</h1>
+{% for student in students: %}
+       <b>
+         {{ student["name"] }} :
+       </b>
+       <br>
+       <p>
+         Группа {{ student["group"]}}
+       </p>
+       <p>
+         Средняя оценка: {{ student["avmark"] }}
+       </p>
+{% endfor %}
+</body>
+</html>
